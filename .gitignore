@@ -1,0 +1,15 @@
+# Local secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Retired personal work log and database dumps
+CLAUDE_LOG.md
+*.dump
+*.backup
+
+# MCP bridge dependencies
+mcp/node_modules/
+
+# Claude Code personal settings (auto-written approvals)
+.claude/settings.local.json

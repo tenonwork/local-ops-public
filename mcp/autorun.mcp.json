@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "local_ops": {
+      "command": "node",
+      "args": ["mcp/src/server.ts", "--role", "executor"],
+      "env": { "LOCAL_OPS_AUTORUN": "1" }
+    }
+  }
+}

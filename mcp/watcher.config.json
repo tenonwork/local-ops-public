@@ -1,0 +1,8 @@
+{
+  "model": "sonnet",
+  "claudeCommand": "claude",
+  "timeoutMin": 60,
+  "maxReadingAgeS": 1800,
+  "maxFiveHourPct": 50,
+  "maxSevenDayPct": 80
+}

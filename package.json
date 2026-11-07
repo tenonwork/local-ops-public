@@ -1,0 +1,14 @@
+{
+  "name": "local-ops",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "local-ops substrate: migrations and the migration runner (scripts/). The MCP bridge is a separate package in mcp/.",
+  "engines": {
+    "node": "^22.18.0 || >=24.2.0"
+  },
+  "scripts": {
+    "test:scripts": "node --test scripts/",
+    "typecheck:scripts": "node mcp/node_modules/typescript/bin/tsc --noEmit --strict --target esnext --module nodenext --moduleResolution nodenext --erasableSyntaxOnly --allowImportingTsExtensions --verbatimModuleSyntax --skipLibCheck --types node --typeRoots mcp/node_modules/@types scripts/migrate.ts scripts/migrate.test.ts"
+  }
+}

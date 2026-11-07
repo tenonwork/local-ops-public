@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(~/.pgpass)",
+      "mcp__local_ops__query",
+      "PowerShell(* .env*)",
+      "PowerShell(* '.env*)",
+      "PowerShell(* \".env*)",
+      "PowerShell(*/.env*)",
+      "PowerShell(*pgpass.conf*)"
+    ],
+    "allow": [
+      "mcp__local_ops__get_pending",
+      "mcp__local_ops__claim_dispatch",
+      "mcp__local_ops__get_dispatch_type",
+      "mcp__local_ops__complete_dispatch",
+      "mcp__local_ops__fail_dispatch",
+      "mcp__local_ops__resolve_context"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "PowerShell(git push *)",
+      "Edit(./.claude/**)",
+      "Edit(~/.claude/settings.json)",
+      "Bash(*.claude/settings*)",
+      "PowerShell(*.claude/settings*)"
+    ]
+  }
+}
